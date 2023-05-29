@@ -12,11 +12,10 @@ class Card extends React.Component {
         return (
             <a className="card" href={`https://www.roblox.com/games/${this.props.info.gameId}`}>
                 <div className="container">
-                    <img className="thumbnail" src={this.props.info.thumbnail} alt="Game Thumbnail"></img>
+                    <img className="thumbnail" src={this.props.info.spotifyThumbnail || this.props.info.youtubeThumbnail} alt="Song Icon"></img>
                     <b className="name info">{this.props.info.name}</b>
-                    <p className="playing info"><i className="fa fa-user"/> <b>{<RollingNumber goal={this.props.info.playing}/>}</b> Playing</p>
-                    <p className="visits info"><i className="fa fa-eye"/> <b>{<RollingNumber goal={this.props.info.visits}/>}</b> Visits</p>
-                    <p className="favorites info"><i className="fa fa-star"/> <b>{<RollingNumber goal={this.props.info.favorites}/>}</b> Favorites</p>
+                    <p className="views info"><i className="fa fa-spotify"/> <b>{<RollingNumber goal={this.props.info.spotifyStreams}/>}</b> Streams</p>
+                    <p className="views info"><i className="fa fa-youtube"/> <b>{<RollingNumber goal={this.props.info.youtubeStreams}/>}</b> Streams</p>
                 </div>
             </a>
         )

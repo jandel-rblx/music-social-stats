@@ -1,7 +1,7 @@
 .card {
     background-color: var(--background-color-light);
     width: 100%;
-    max-width: 424px;
+    max-width: 224px;
     height: auto;
 
     border-radius: 5px;
@@ -46,7 +46,7 @@
         font-size: 24px;
     }
 
-    .playing, .visits, .favorites {
+    .views {
         font-size: 16px;
     }
 
