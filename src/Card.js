@@ -10,14 +10,14 @@ class Card extends React.Component {
 
     render() {
         return (
-            <a className="card" href={`https://www.roblox.com/games/${this.props.info.gameId}`}>
+            <div className="card">
                 <div className="container">
                     <img className="thumbnail" src={this.props.info.spotifyThumbnail || this.props.info.youtubeThumbnail} alt="Song Icon"></img>
                     <b className="name info">{this.props.info.name}</b>
-                    <p className="views info"><i className="fa fa-spotify"/> <b>{<RollingNumber goal={this.props.info.spotifyStreams}/>}</b> Streams</p>
-                    <p className="views info"><i className="fa fa-youtube"/> <b>{<RollingNumber goal={this.props.info.youtubeStreams}/>}</b> Streams</p>
+                    <a href={`https://www.spotify.com/track/${this.props.info.spotifyId}`} className={`views info ${this.props.info.spotifyId ? "active" : "inactive"}`}><i className="fa fa-spotify"/> <b>{<RollingNumber goal={this.props.info.spotifyStreams}/>}</b> Streams</a>
+                    <a href={`https://www.youtube.com/watch?v=${this.props.info.youtubeId}`} className={`views info ${this.props.info.youtubeId ? "active" : "inactive"}`}><i className="fa fa-youtube"/> <b>{<RollingNumber goal={this.props.info.youtubeStreams}/>}</b> Streams</a>
                 </div>
-            </a>
+            </div>
         )
     }
 }

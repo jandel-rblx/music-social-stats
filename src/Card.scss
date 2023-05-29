@@ -23,7 +23,13 @@
         font-family: "Mona-Sans Wide", sans-serif;   
     }
 
+    a {
+        display: block;
+    }
 
+    .inactive {
+        display: none;
+    }
 
     .info {
         margin-top: 5px;
