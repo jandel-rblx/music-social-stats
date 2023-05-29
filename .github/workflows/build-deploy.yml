@@ -27,7 +27,7 @@ jobs:
       run: npm ci
     
     - name: Build project
-      run: PUBLIC_URL=https://jandel-rblx.github.io/roblox-game-stats CI=false npm run build
+      run: PUBLIC_URL=https://jandel-rblx.github.io/music-social-stats CI=false npm run build
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
