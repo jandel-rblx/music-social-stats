@@ -92,7 +92,7 @@ class App extends React.Component {
         return (
             <div className='app'>
                 <h3>
-                    Jandel's Music Stats
+                    Beats by LMC
                 </h3>
                 <p>
                     <b><RollingNumber goal={this.state.totalStreams}/>
