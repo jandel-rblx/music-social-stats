@@ -18,5 +18,10 @@
         "name": "Seven Nation Army",
         "spotify_id": "3dPQuX8Gs42Y7b454ybpMR",
         "youtube_id": "0J2QdDbelmY"
+    },
+    {
+        "name": "Malformed Test 1",
+        "spotify_id": "idk",
+        "youtube_id": "LOL!"
     }
 ]
