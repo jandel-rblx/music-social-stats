@@ -106,7 +106,7 @@ class App extends React.Component {
                         this.state.loaded ? null : <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
                     }
                     {
-                        Object.values(this.state.songInfo).sort((a, b) => b.streams - a.streams).map((info) => {
+                        Object.values(this.state.songInfo).sort((a, b) => b.totalStreams - a.totalStreams).map((info) => {
                             return <Card info={info} key={info.spotifyId || info.youtubeId}/>
                         })
                     }
