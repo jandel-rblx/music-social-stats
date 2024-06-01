@@ -1,6 +1,6 @@
 let Music = {};
 
-Music.PROXY_URL = "https://typical-backend-n0kt.onrender.com/" //"https://typical-backend-n0kt.onrender.com/"
+Music.PROXY_URL = "https://jandel-backend.onrender.com/" //"https://typical-backend-n0kt.onrender.com/"
 Music.SECRET = "jandelmusic" // Not really that "secret", just how the backend works.
 
 Music.total_music_map = {}
